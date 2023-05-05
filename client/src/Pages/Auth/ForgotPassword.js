@@ -48,6 +48,7 @@ const ForgotPasssword = () => {
               id="exampleInputEmail1"
               placeholder="Enter Your Email "
               required
+              autoComplete="off"
             />
           </div>
           <div className="mb-3">
@@ -59,6 +60,7 @@ const ForgotPasssword = () => {
               id="exampleInputEmail1"
               placeholder="Enter Your favorite Sport Name "
               required
+              autoComplete="off"
             />
           </div>
           <div className="mb-3">

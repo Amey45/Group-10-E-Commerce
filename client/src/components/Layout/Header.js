@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import { FaShoppingBag } from "react-icons/fa";
+import { AiOutlineUser } from "react-icons/ai";
+import { FaUserAlt } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 
 const Header = () => {
@@ -69,12 +71,14 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       style={{ border: "none" }}
                     >
-                      {auth?.user?.name}
+                      <FaUserAlt /> {auth?.user?.name}
                     </NavLink>
                     <ul className="dropdown-menu">
                       <li>
                         <NavLink
-                          to={"/dashboard"}
+                          to={`/dashboard/${
+                            auth?.user?.role === 1 ? "admin" : "user"
+                          }`}
                           className="dropdown-item"
                         >
                           Dashboard

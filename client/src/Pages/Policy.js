@@ -8,7 +8,7 @@ const Policy = () => {
         <div className="col-md-6 row-md-6">
           <img
             src="/images/privacy-policy.jpg"
-            alt="contactus"
+            alt="about"
             style={{ width: "90%" }}
           />
         </div>
